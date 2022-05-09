@@ -5,8 +5,27 @@
   amogus
 </h1>
 <img src = "https://c.tenor.com/uSBq5a_xtHkAAAAC/wide-imposter-wide-animation-png-red.gif" alt="amogus">
+<table>
+  <tbody>
+      <tr>
+        <td>
+          <p id="text">Overall Grade:</p>
+        </td>
+    </tr></tbody>
+    </table>
 <script>
-  alert(navigator.language);
+  var index = -1;
+  var titleList = ["ATTENTION!", "¡ATTENCÍON!", "注意!"];
+  var language = navigator.language;
+  var lang = language.substring(0, 2);
+  if (lang == "en") {
+    index = 0;
+  } else if (lang == "es"){
+    index = 1;
+  } else{
+    index = 2;
+  }
+  document.getElementById("text").innerHTML = titleList[index];
 </script>
 </body>
 </html>
